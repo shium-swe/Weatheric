@@ -1,0 +1,16 @@
+{% extends "layout.html" %} 
+
+{% block body %} 
+  <div class="main-container">
+    <div class="container-sm">
+      <h4 class="title">Welcome to Weatheric! Enter a city down below.</h4>
+      <div class="form-container">
+        <form action="/forecast" method="post" class="input-group mb-3">
+          <input type="text" name="city" id="city-input" class="form-control" aria-describedby="button-addon2" autocomplete="off" autofocus placeholder="Example: 'New York'" required>
+          <input type="submit" value="Enter" class="btn btn-outline-primary" id="button-addon2">
+        </form>
+      </div>
+      <img src="../static/logo.png" alt="weather-icon" style="margin-top: 48px" width="240px" height="240px">
+    </div>
+  </div>
+{% endblock %}

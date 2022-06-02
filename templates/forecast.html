@@ -1,0 +1,59 @@
+{% extends 'layout.html' %} {% block body %}
+<div class="container-forecast">
+  <h2 id="title-forecast">
+    Alright we got the data about {{ city['city_name'].title() }}. What would
+    you like know? (Click on one of the options down below)
+  </h2>
+  <ul class="list-group">
+    <li
+      onclick="toggleAnswer('answer1')"
+      class="list-group-item dropdown-toggle text-wrap"
+    >
+      What's the weather like for today in {{ city['city_name'].title() }}?
+    </li>
+    <div class="dropdown-item" id="answer1" style="display: none">
+      {{city.getTodaysWeather()}}
+    </div>
+    <li
+      onclick="toggleAnswer('answer2')"
+      class="list-group-item dropdown-toggle text-wrap"
+    >
+      What's the weather like for tomorrow in {{city['city_name'].title()}}?
+    </li>
+    <div class="dropdown-item" id="answer2" style="display: none">
+      {{city.getTomorrowsWeather()}}
+    </div>
+    <li
+      onclick="toggleAnswer('answer3')"
+      class="list-group-item dropdown-toggle text-wrap"
+    >
+      What's the hottest temperature in the next 7 days in
+      {{city['city_name'].title()}}?
+    </li>
+    <div class="dropdown-item" id="answer3" style="display: none">
+      {{city.getHottestTemp()}}
+    </div>
+    <li
+      onclick="toggleAnswer('answer4')"
+      class="list-group-item dropdown-toggle text-wrap"
+    >
+      What's the coldest temperature in the next 7 days in
+      {{city['city_name'].title()}}?
+    </li>
+    <div class="dropdown-item" id="answer4" style="display: none">
+      {{city.getColdestTemp()}}
+    </div>
+  </ul>
+  <form action="/">
+    <input type="submit" value="Another city please!" class="btn btn-primary" />
+  </form>
+</div>
+<script>
+  function toggleAnswer(id) {
+    var elem = document.getElementById(id);
+    elem.style.display == "none"
+      ? (elem.style.display = "block")
+      : (elem.style.display = "none");
+  }
+</script>
+{% endblock %}

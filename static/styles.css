@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-sm {
+  text-align: center;
+  padding-top: 15%;
+}
+
+.container-forecast {
+  padding-top: 10%;
+  width: 80%;
+  margin: auto;
+}
+
+.form-container {
+  width: 50%;
+  margin: auto;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+#title-forecast {
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+
+.list-group-item {
+  margin-bottom: 24px;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.dropdown-item {
+  margin-bottom: 2em;
+}
