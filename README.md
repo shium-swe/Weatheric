@@ -28,3 +28,7 @@ touch .env
 ```console
 flask run
 ```
+### Here's a video of the app
+
+https://user-images.githubusercontent.com/87793166/172608153-f4c3d71e-a157-4694-abbe-3058240ff471.mov
+
