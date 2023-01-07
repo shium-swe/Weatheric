@@ -23,8 +23,13 @@ touch .env
 ```
 6. Create an API key from the OpenWeather website
 > If you need any help, just follow this [resource](https://www.balbooa.com/gridbox-documentation/openweathermap-api-key)
+
+7. Activate virtual environment (*For Mac users*)
+```console
+source flaskenv/bin/activate
+```
  
-6. Finally run this
+8. Finally run this
 ```console
 flask run
 ```
