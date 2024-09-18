@@ -1,5 +1,5 @@
 # Weatheric
-> A minimal weather web application for AP Computer Science Principles final project
+> A minimal weather web application for AP Computer Science final project
 
 ### View app preview [here](https://weatheric.herokuapp.com/)
 
